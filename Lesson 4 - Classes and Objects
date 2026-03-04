@@ -1,0 +1,36 @@
+/*
+Name: Juan Montero
+Course: CSCI 272
+Lesson Number: Lesson 4
+Code Topic: Copy Constructor Example
+Date: 02/15/2026
+*/
+#include "BankAccount.h"
+#include <iostream>
+using namespace std;
+
+int main(){
+    BankAccount bankAccount1;
+    
+    bankAccount1.deposit(30.5);
+    
+    cout << "Account Balance: $"<< bankAccount1.getBalance() << endl;
+
+    return 0;
+}
+/*
+Reflection:
+1. I understood how to define a bank account class and how it uses the copy and
+destructor constructor to show withdrawals or deposits into the account.
+
+2. I struggled with creating the initial private balance value. At first I
+didn't understand the difference between private and public classes. 
+
+3. I searched online about the difference between private and public classes.
+
+4. I used ChatGPT to ask for examples of private and public classes. 
+
+5. I learned how to succesfully represent a deposit into a bank account
+using copy constructors. Also learned the difference between having a class as
+public or private and which branch can access it. 
+*/
