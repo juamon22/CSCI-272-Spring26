@@ -1,0 +1,50 @@
+/*
+Name: Juan Montero
+Course: CSCI 272
+Lesson Number: Lesson 4
+Code Topic: Copy Constructor Example
+Date: 02/15/2026
+*/
+#include "Car.h"
+
+int main(){
+    
+    Car car1;
+    
+    Car car2("Tesla", "X", 2022);
+    
+    Car car3(car2);
+    
+    Car* pCar1 = new Car;
+    
+    Car* pCar2 = new Car("Tesla", "X", 2022);
+    
+    Car carArray[20];
+    
+    car1.startEngine();
+    car2.startEngine();
+    car3.startEngine();
+    pCar1->startEngine();
+    pCar2->startEngine();
+    carArray[0].startEngine();
+    
+    delete pCar1;
+    delete pCar2;
+
+    return 0;
+}
+/*
+Reflection:
+1. I understood how to create a class car, and create new objects in this class.
+Also understood how to call for the car using start engine and then delete it.
+
+2. I initially struggled with the copy constructor because I didn't understand
+why I was getting an error for having 'other.brand' and it was because i forgot the const &.
+
+3. I searched online for help on explaining the copy constructor.
+
+4. I used ChatGPT to explain the copy constructor and give me examples.
+
+5. I learned how to use copy constructors as well as what differs it from
+defaultonstructors and parameter constructors.
+*/
