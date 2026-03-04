@@ -1,0 +1,34 @@
+/*
+Name: Juan Montero
+Course: CSCI 272
+Lesson Number: Lesson 4
+Code Topic: Copy Constructor Example
+Date: 02/15/2026
+*/
+#include "Car.h"
+
+int main()
+{
+    Car car1;
+    
+    car1.startEngine();
+    
+    car1.accelerate();
+    
+    return 0;
+}
+/*
+Reflection:
+1. I understood how to call an object in class car with start engine,
+as well as with accelerate. 
+
+2. I feel like there was no difficulties in this portion since we've 
+practiced this already.
+
+3. Didn't need any research for this portion.
+
+4. Didn't use any AI for this portion.
+
+5. I learned how to define an object in class car and define the 
+start engine and accelerate functions.
+*/
