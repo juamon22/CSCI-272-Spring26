@@ -1,0 +1,37 @@
+/*
+Name: Juan Montero
+Course: CSCI 272
+Lesson Number: Lesson 4
+Code Topic: Copy Constructor Example
+Date: 02/15/2026
+*/
+#include "Car.h"
+
+int main()
+{
+    Car car1;
+    Car car2("Tesla", "X", 2022);
+    Car car3(car2);
+    
+    car1.startEngine();
+    car2.startEngine();
+    car3.startEngine();
+    
+    return 0;
+}
+/*
+Reflection:
+1. I understood how to create a class car and adddifferent objects.
+
+2. I struggled with the Car.h copy construct because I kept forgetting
+the const & for the function to work. I also struggled with the destructor
+because it was knew using the ~ sign.
+
+3. I searched online for how to create a destructor and what a copy constructor
+needs, in order to succesfully make a copy of car2
+
+4. I used ChatGPT to explain the destructor function, and the const & function.
+
+5. I learned how to use a copy construct to create car3 copying car2. I also
+what a destructir is and how it functions to save memory.
+*/
