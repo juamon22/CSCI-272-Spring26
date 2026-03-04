@@ -1,0 +1,38 @@
+/*
+Name: Juan Montero
+Course: CSCI 272
+Lesson Number: Lesson 4
+Code Topic: Copy Constructor Example
+Date: 02/15/2026
+*/
+#include "User.h"
+
+int main(){
+    
+    User user1("userName123", "password123");
+    
+    bool success = user1.login("userName1234", "password123");
+    
+    if (success){
+        cout<<"User logged in successfully!"<<endl;
+    } else {
+        cout << "Login failed. Please check your credentials and try again."<<endl;
+    }
+
+    return 0;
+}
+/*
+Reflection:
+1. I understood how to create a username class using a given username and password.
+I also understood how to enter a username and password and check whether said entry is correct.
+
+2. I initially struggled with creating a boolean success. I wasn't understanding how to 
+make it check if the input is correct or not.
+
+3. I searched online for help on how to create and use the boolean success. 
+
+4. I used ChatGPT to explain how to create a bollean success and to explain how it works.
+
+5. I learned how to use constructors for creating a user object with an initial username & password.
+I learned how to define a function for a login attempt, and return a boolean indicating success.
+*/
