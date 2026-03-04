@@ -1,0 +1,33 @@
+/*
+Name: Juan Montero
+Course: CSCI 272
+Lesson Number: Lesson 4
+Code Topic: Copy Constructor Example
+Date: 02/15/2026
+*/
+#include "Person.h"
+
+int main(){
+    
+    Person person1;
+    
+    person1.introduce();
+    
+    return 0;
+}
+/*
+Reflection:
+1. I understood how to introduce the person and provide initial information like name,
+age, and gender. As well as how to check that these facts are correct.
+
+2. I initially struggled with creating the User.h class. At first i couldnt understand how to 
+create a class and split it into two sheets of code. I though it was two different
+codes and combine them together later on.
+
+3. I searched online for help on how to create and use the two pages of codes in one. 
+
+4. I used ChatGPT to explain how to create a class declaration.
+
+5. I learned how to create a class declaration type person, and how it works even it's
+outside of main. 
+*/
